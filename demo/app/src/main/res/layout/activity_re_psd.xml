@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.huangdemo.RePsdActivity">
+    <include
+        android:id="@+id/up_line"
+        layout="@layout/upline" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/nickname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="新密码:"/>
+        <TextView
+            android:id="@+id/current_nickname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:hint="请输入新密码"
+        />
+    <Button
+        android:id="@+id/rename_ok"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/red"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+</LinearLayout>

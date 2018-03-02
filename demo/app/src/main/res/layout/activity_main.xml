@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.huangdemo.LoginActivity">
+    <include
+        android:id="@+id/up_line"
+        layout="@layout/upline" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center_vertical"
+                android:hint="请输入账号"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:nextFocusForward="@+id/versioncode_input"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"/>
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center_vertical"
+                android:hint="请输入密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:nextFocusForward="@+id/versioncode_input"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="登陆"
+            android:textSize="16sp"
+            android:background="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/to_register"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="注册"
+                android:textSize="14sp"
+                android:background="@color/red"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/forget_pwd"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/_45dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:background="@color/translate"-->
+                <!--android:gravity="left"-->
+                <!--android:text="@string/forget_pwd"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="@dimen/_14sp" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
